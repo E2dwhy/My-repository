@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="/context/js/default.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Search Form</title>
+<script type="text/javascript">
+function validate(form)
+{
+	if(document.F1.Username.value==""){
+		alert("user name can't be null");
+		document.F1.Username.value="";
+		document.F1.Username.focus();
+		return false;
+	}
+	if(document.F1.Password.value==""){
+		alert("Password can't be null");
+		document.F1.Password.value="";
+		document.F1.Password.focus();
+		return false;
+	}
+	return true;
+}
+
+</script>
+</head>
+<body>
+<div class="header" >
+      <div class="headerpart">
+      <a href="#">
+      <img src="Banner1.jpg" alt="Banner1" title="Banner1"/>
+      </a>
+      </div>
+      </div>
+      <div class="nav">
+      <ul>
+      <li><a href="index.html"> Home</a></li>
+      <li><a href=""> Properties</a>
+          <ul>
+              <li><a href="AvailableProperties.jsp" >Available</a></li>
+              <li><a href="">Search</a></li>
+          </ul>
+      </li>
+      <li><a href="Appointments.html"> Appointments</a></li>
+      <li><a href="Contact us.html" target="main_frame"> Contact Us</a></li>
+      <li><a href="Login.html" target="main_frame"> Login</a></li>
+      </ul>
+      </div>
+      <div id="main">
+      <a href="E:\College Classes\OHMS project\New folder (2)\sw465k.jpg"></a>
+      </div>
+      <div id="wrapper">     
+      </div><br><br>
+      <br>
+      <br>
+      <br>
+      
+  <div>
+  <table style="width:897px; background:#FFFFFF; margin:0 auto;"><tr align="justify">
+	<td width="299" valign="top" style="border-right:#666666 1px dotted;">
+	
+   	     <form action="Search.jsp"  method="get" onsubmit="validate()" name="myform">
+       		<h3>Search By Location:</h3>
+       		<table bgcolor="#3399CC">
+       			<tr>
+       				<td>Enter Location Needed</td>
+       				<td><input type="text" name="loc"/><br/></td>
+       				<td><input type="submit" value="Search"/> </td>
+       			</tr>
+       		</table>
+    	</form>
+    	   	     <form action="Search1.jsp"  method="get" onsubmit="validate()" name="myform">
+       		<h3>Search by No of BHK:</h3>
+       		<table bgcolor="#3399CC">
+       			<tr>
+       				<td>Enter No Of BHK Needed</td>
+       				<td><input type="text" name="bhk"/><br/></td>
+       				<td><input type="submit" value="Search"/> </td>
+       			</tr>
+       		</table>
+    	</form>
+
+        
+	</td>
+    
+    <td width="299" valign="top">
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>Welcome</h1><br>
+    	    <center><img src="Htech logo.jpg" alt="Logo" width="196" height="106"></center><br>
+		    <p> The Online Housing Management System brings houses to you<br>
+         Through the web site you are able to find a house easier and faster<br>
+         All you have to do is trust us and we will do the rest...<br>
+         Welcome to  Home Technology Htech!!!</p>
+	    	
+	    </div>      
+    </td>
+    
+</tr></table>
+  </div>
+</body>
+</html>

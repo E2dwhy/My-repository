@@ -1,0 +1,159 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style type="text/css">
+body{margin:0;}
+.header{width:100%; height:auto;}
+.headerpart{width:1024px; margin:0 auto;}
+.headerpart a img{width:1024px; margin:0 auto; display:bolck;}
+.nav{margin:0 auto; width:1080px;}
+.nav ul{padding: 0;}
+.nav ul li{float:left; marging:2px; position:relative; background-color:#3399CC; border-radius:5px; list-style-type:none;}
+.nav ul li a{text-decoration:none; color:white; padding:8px; display:block; font-weight:bolder; width:200px; text-align:center;  }
+.nav ul li ul{position:absolute; visibility:hidden;}
+.nav ul li:hover ul{visibility:visible;}
+.nav ul li a:hover{color:blue;}
+.nav ul li:hover{background-color:white;}
+body{background:#CCCCFF;}
+body{background-image:url("1.jpg"); background-repeat:no-repeat;}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Add Property</title>
+</head>
+<body>
+<div class="header" >
+      <div class="headerpart">
+      <a href="#">
+      <img src="Banner1.jpg" alt="Banner1" title="Banner1"/>
+      </a>
+      </div>
+      </div>
+      <div class="nav">
+      <ul>
+      <li><a href="index.html"> Home</a></li>
+      <li><a href=""> Properties</a>
+          <ul>
+              <li><a href="AvailableProperties.jsp">Add</a></li>
+              <li><a href="">Search</a></li>
+          </ul>
+      </li>
+      <li><a href="AppointmentsRecord.jsp"> Appointments</a></li>
+      <li><a href="Finance.jsp">Finance</a></li>
+      <li><a href="index.html">Logout</a></li>
+      </ul>
+      </div>
+      <div id="main">
+      <a href="E:\College Classes\OHMS project\New folder (2)\sw465k.jpg"></a>
+      </div><br><br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+<table style="width:897px; background:#FFFFFF; margin:0 auto;"><tr align="justify">
+	<td width="299" valign="top" style="border-right:#666666 1px dotted;">
+   	<form method="post" action="http://localhost:8080/OHMS/Addproperty.do">
+      <table border="0px" bgcolor="#3399CC">
+      <tr><th> Managing Properties </th></tr>
+      <tr><td></td></tr>
+      <tr>
+          <td>Owner Name</td>
+          <td><input type="text" id="name" name="OwnerName"/></td>
+      </tr>
+      <tr>
+          <td>Property Name</td>
+          <td><input type="text" id="PropertyName" name="pn"/></td>
+      </tr>
+      <tr>
+          <td>Property type</td>
+          <td>
+           <select name="PropertyType">
+                    <option value="Apartment">Apartment</option>
+                    <option value="Independent house">Independent House</option>
+                    <option value="PG">PG</option>
+                    <option value="Studio">Studio</option>
+                    <option value="Farm house">Farm House</option>
+                    <option value="Other">Other</option>
+           </select>
+          </td>
+      </tr>
+      <tr>
+          <td>BHK</td>
+          <td>
+           <select name="BHK">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+           </select>
+          </td>
+      </tr>
+      <tr>
+           <td>Bath rooms</td>
+          <td>
+           <select name="Bathrooms">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+           </select>
+          </td>
+      </tr>
+      <tr>
+          <td>Location</td>
+          <td><input type="text" id="Location" name="Location"/></td>
+      </tr>
+      <tr>
+         <td>Expected Rent</td>
+         <td><input type="text" id="rent" name="ExpectedRent"/></td>
+      </tr>
+      <tr>
+         <td>Expected Deposit</td>
+         <td><input type="text" id="Deposit" name="ExpectedDeposit"/></td>
+      </tr>
+      <tr>
+         <td>Available from</td>
+         <td><input type="text" id="available" name="AvailableFrom"/></td>
+      </tr>
+      <tr>
+      <td>                                    </td>
+      </tr>
+      <tr>
+          <td>Property Photos</td>
+          <td><input type="file"/></td>
+      </tr>
+      <tr>
+      <td><input type="submit" value="Save"/></td>
+      <td><input type="submit" value="Update"/></td>
+      <td><input type="reset" value="Reset"/></td>
+      </tr>
+      </table>
+   
+</form>
+	</td>
+    
+    <td width="299" valign="top">
+    	<div id="welcome" style="border-right:#666666 1px dotted;"><h1>Welcome Amdin</h1><br>
+    	    <center><img src="Htech logo.jpg" alt="logo" width="196" height="106"></center><br>
+		    <p> The Online Housing Management System brings houses to you<br>
+         Through the web site you are able to find a house easier and faster<br>
+         All you have to do is trust us and we will do the rest...<br>
+         Welcome to  Housing Technology Htech!!!</p>
+	    	
+	    </div>      
+    </td>
+    
+</tr></table>   
+      
+</body>
+</html>
